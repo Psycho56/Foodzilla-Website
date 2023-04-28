@@ -25,6 +25,7 @@ html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
  } 
 
 strong {
@@ -52,6 +53,7 @@ ul {
 
 li {
   position: relative;
+  list-style: none;
 }
 
 ul li a {
@@ -337,115 +339,136 @@ form img{
 }
 
 footer {
-  width: 100%;
-  height: 100vh;
-  margin-top: 940px;
-  background-color: var(--clr-card-bg);
-  background-image: url(./footer-background-map.svg);
-  position: relative;
- }
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 55rem;  
+}
+.contact {
+   width: 40%;
+   padding: 30px;
+   margin-top:7.8rem;
+   margin-left:13.5rem;
+}
+.contact h1 {
+  font-size: 60px;
+  letter-spacing: 1.4px;
+}
+.email {font-weight: bold;}
+.contact p {width: 76%;}
 
- .wrapper {
-  position: absolute;
-  top: 25%;
-  left: 15%;
- }
- .wrapper h1 {
-  font-weight: 700;
-  font-size: 50px;
-  letter-spacing: 2px;
- }
- .wrapper p{
-  max-width: 60ch;
-  margin: 15px 0;
- }
+.question {
+  width: 546px;
+  height: 479px;
+  margin-left: 1.7rem;
+  margin-top: -6rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
 
-.input-group {
+.question h1 {
+  font-size:40px;
+}
+.question label {
   width: 20%;
-  height: 439px;
-  position: absolute;
-  right: 40px;
-  top: -70px;
-  border: 2px solid rgba(211, 211, 211, 0.296);
+  align-self: start;
+  margin-left: 54px;
+  margin-top:10px;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+.question input {
+  width: 427px;
+  height: 44px;
+  align-self: start;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  background-color: var(--primary-color);
-  line-height: 2.7;
+  margin-left: 54px;
+  padding-left: 8px;
+  border: 1px solid lightgray;
 }
-
- .input-group span {
-   font-weight: 500;
- }
-
-input, textarea {
-  width: 80%;
-  padding:0 20px;
-  border: 2px solid lightgrey;
+.question #comments {
+  align-self: start;
+  margin-left: 54px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
 }
-
-.submitBtn {
-  width: 70%;
-  height: 40px;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.question .ftr-btn {
+  width: 427px;
+  height: 51px;
   background-color: black;
-  color: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+  margin-top: 3rem;
+  align-self: start;
+  margin-left: 55px;
+}
+
+.question .textarea2{
+  display: none;
+}
+
+#comments, input:hover 
+#comments, input:active {
+  outline: none;
   border: none;
-  margin: 35px 0;
-  transition: all .8s ease-in;
-}
-.submitBtn:hover{
-  transform: scale(1.2);
-  background-color: aqua;
 }
 
-.footer-link-card {
-  position: absolute;
-  bottom: 20px;
+.social-link-wrapper {
+  width: 1184px;
+  height: 360px;
+  margin-left: 200px;
+  background-color: var(--clr-white);
   display: flex;
-  right: 160px;
-  width: 80%;
-  height: 320px;
-  background-color: var(--primary-color);
-}
-
-.footer-nav {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+}
+
+.fodzilla {
   width: 50%;
 }
 
-.footer-nav p{
-  max-width: 60ch;
+.fodzilla p{
+  width: 81%;
+}
+.more, .social{
+  margin-right: 110px;
+}
+.more ul, .social ul{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
-.footer-links {
-  width: 25%;
-  display:grid;
+.fodzilla__img {
+  width: 275px;
+  height: 115px;
 }
 
-.footer-links h1{
-  font-size: 18px;
-  color: var(--clr-lightblue);
-  margin-top: 20px;
-  margin-left: 70px;
+.more ul li, .social ul li{
+  font-size: 24px;
+  line-height: 0.7;
 }
 
-.footer-links a{
-  color: var(--clr-header-txt);
-  margin-left: 70px;
-  text-decoration: none;
+
+.arrow-wrapper {
+  display: flex;
+  justify-content: center;
+
 }
 
+.up-arrow{
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  margin-top: -50px;
+  background-color: rgb(255, 253, 253);
+  display: flex;
+  border: 1px solid lighgray;
+  align-items: center;
+  justify-content: center;
+}
 
 
 @media screen and (max-width:475px) {
